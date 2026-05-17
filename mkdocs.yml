@@ -49,7 +49,6 @@ repo_url: https://github.com/ift3150-template/ift3150-template.github.io
 
 markdown_extensions:
   - admonition
-  - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.tasklist:
