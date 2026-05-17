@@ -4,10 +4,10 @@ title: Vue d'ensemble du projet
 
 # Vue d'ensemble du projet
 
-Informations générales \
-    **Session:** Été 2026 \
-    **Auteure:** Isabelle Guillard (20278907) \
-    **Thème(s):** Génération d'exercices mathématiques (algorithmique), systèmes adaptatifs, développement web \
+Informations générales 
+    **Session:** Été 2026 
+    **Auteure:** Isabelle Guillard (20278907) 
+    **Thème(s):** Génération d'exercices mathématiques (algorithmique), systèmes adaptatifs, développement web 
     **Superviseur:** Louis Edouard Lafontant
     
 ## Description du projet
