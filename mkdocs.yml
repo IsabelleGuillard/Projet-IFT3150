@@ -4,7 +4,7 @@ site_author: Louis-Edouard Lafontant
 site_url: https://ift3150-template.github.io
 
 theme:
-  name: mkdocs
+  name: material
   language: fr
   features:
     - navigation.instant
@@ -49,6 +49,15 @@ repo_url: https://github.com/ift3150-template/ift3150-template.github.io
 
 markdown_extensions:
   - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.emoji
+  - pymdownx.keys
   - attr_list
   - def_list
   - footnotes
