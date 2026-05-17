@@ -4,7 +4,7 @@ site_author: Louis-Edouard Lafontant
 site_url: https://ift3150-template.github.io
 
 theme:
-  name: material
+  name: mkdocs
   language: fr
   features:
     - navigation.instant
