@@ -759,11 +759,10 @@
 
 
 <h1 id="vue-densemble-du-projet">Vue d'ensemble du projet<a class="headerlink" href="#vue-densemble-du-projet" title="Permanent link">&para;</a></h1>
-<p>Informations générales 
-    <strong>Session:</strong> Été 2026 
-    <strong>Auteure:</strong> Isabelle Guillard (20278907) 
-    <strong>Thème(s):</strong> Génération d'exercices mathématiques (algorithmique), systèmes adaptatifs, développement web 
-    <strong>Superviseur:</strong> Louis Edouard Lafontant</p>
+<p><strong>Session:</strong> Été 2026<br />
+<strong>Auteure:</strong> Isabelle Guillard (20278907) <br />
+<strong>Thème(s):</strong> Algorithmique, LLM, systèmes adaptatifs, développement web <br />
+<strong>Superviseur:</strong> Louis Edouard Lafontant  </p>
 <h2 id="description-du-projet">Description du projet<a class="headerlink" href="#description-du-projet" title="Permanent link">&para;</a></h2>
 <h3 id="contexte">Contexte<a class="headerlink" href="#contexte" title="Permanent link">&para;</a></h3>
 <p>L'enseignement des mathématiques au secondaire repose en grande partie sur la pratique d'exercices de façon répétée, ce qui permet aux élèves de consolider les concepts et de maîtriser les différentes méthodes de résolution de problèmes. Dans un contexte de tutorat individuel ou de soutien scolaire, cette pratique se fait lors des séances, mais il peut arriver de donner des exercices à pratiquer en dehors des séances sans qu'il y ait nécessairement un suivi structuré ou d'adaptation au niveau réel de l'élève.</p>
@@ -774,15 +773,42 @@
 <h3 id="proposition-et-objectifs">Proposition et objectifs<a class="headerlink" href="#proposition-et-objectifs" title="Permanent link">&para;</a></h3>
 <p>Ce projet propose le développement d'une plateforme web de pratique en mathématiques destinée aux élèves du secondaire, conçue pour s'intégrer naturellement dans un contexte de tutorat. La plateforme comprendrait deux portails distincts : un portail tuteur permettant de gérer les profils d'élèves et de suivre leur progression, et un portail élève offrant un accès simplifié par code unique à des exercices générés algorithmiquement et adaptés dynamiquement au niveau de l'élève.</p>
 <h3 id="methodologie">Méthodologie<a class="headerlink" href="#methodologie" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>Expliquez comment vous comptez aborder le projet : démarche générale, grandes étapes prévues, itérations, types de validations envisagées.</p>
-</blockquote>
+<p>Le projet suit une démarche de développement itératif organisée en quatre phases principales.</p>
+<p>La première phase (semaines 1 et 2) est consacrée à l'analyse des exigences : définition
+de la portée, validation des besoins auprès de tuteurs du milieu et documentation des
+études préliminaires.</p>
+<p>La deuxième phase (semaines 3 et 4) couvre l'exploration technique et la prise de décisions
+architecturales : expérimentation avec le LLM retenu, définition des principales composantes
+du système et de leurs interactions, conception des maquettes de l'interface et finalisation
+de l'architecture.</p>
+<p>La troisième phase (semaines 5 à 8) constitue le développement principal : implémentation
+du moteur de génération algorithmique d'exercices par compétence, de l'algorithme adaptatif,
+de l'interface élève, du portail tuteur et de l'intégration LLM pour la génération
+d'exercices contextualisés et les explications personnalisées après erreur.</p>
+<p>La quatrième phase (semaines 9 à 12) est dédiée aux tests, aux ajustements, à la rédaction
+du rapport final et à la préparation de la présentation.</p>
 <h3 id="validation-et-evaluation">Validation et Évaluation<a class="headerlink" href="#validation-et-evaluation" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>Indiquez comment vous évaluerez que votre solution répond aux objectifs du projet (ex. scénarios d’usage, tests, retours utilisateurs, indicateurs qualitatifs ou quantitatifs).</p>
-</blockquote>
+<p>La validation du projet s'effectue à deux niveaux.</p>
+<p><strong>Validation technique</strong></p>
+<p>Pour les exercices calculatoires, la validation repose sur des tests automatisés vérifiant
+que les exercices produits sont mathématiquement corrects et conformes aux contraintes du
+niveau ciblé, et que la vérification des réponses fonctionne correctement pour tous les
+formats de saisie acceptés. L'algorithme adaptatif est validé par simulation de profils
+d'élèves types (progression rapide, progression lente, régression) et vérification que
+les niveaux évoluent conformément aux seuils définis.</p>
+<p>Pour les exercices contextualisés générés par le LLM, la validation est effectuée
+manuellement : un échantillon d'exercices générés est examiné pour s'assurer que l'énoncé
+correspond bien aux paramètres numériques fournis, qu'aucune ambiguïté n'est introduite
+dans la réponse attendue, et que le contexte est approprié pour des élèves du secondaire.</p>
+<p><strong>Validation pratique</strong></p>
+<p>La plateforme sera soumise à des sessions de test avec les tuteurs ayant exprimé leur
+intérêt lors des entretiens préliminaires. Les indicateurs retenus incluent la capacité
+à compléter une session sans assistance, la lisibilité des exercices générés, la pertinence
+perçue du niveau de difficulté et la qualité des explications fournies par le LLM après
+erreur. Les retours seront documentés et les ajustements apportés seront consignés dans
+le rapport final.</p>
 <h2 id="echeancier">Échéancier<a class="headerlink" href="#echeancier" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>Le suivi complet est disponible dans la page [Suivi de projet](suivi.md).
+<div class="highlight"><pre><span></span><code>Le suivi complet est disponible dans la page [Suivi de projet].
 </code></pre></div>
 <table>
 <thead>
@@ -799,22 +825,29 @@
 <td>Ouverture de projet</td>
 <td>7 mai</td>
 <td>7 mai</td>
-<td>Le déploiement du site</td>
+<td>Déploiement du site de documentation</td>
 <td>✅ Terminé</td>
 </tr>
 <tr>
 <td>Études préliminaires</td>
 <td>7 mai</td>
-<td>12 mai</td>
+<td>18 mai</td>
 <td>Document d'analyse</td>
-<td>🔄 En cours</td>
+<td>✅ Terminé</td>
 </tr>
 <tr>
-<td>Présentation + Rapport</td>
-<td>7 aout</td>
-<td>14 aout</td>
-<td>Présentation + Rapport</td>
-<td>⏳ À venir</td>
+<td>Analyse des exigences</td>
+<td>19 mai</td>
+<td>24 mai</td>
+<td>Diagrammes d'architecture maquettes</td>
+<td>✅ Terminé</td>
+</tr>
+<tr>
+<td>Exploration LLM et architecture</td>
+<td>24 mai</td>
+<td>1 juin</td>
+<td>Décisions architecturales documentées</td>
+<td>🔄 En cours</td>
 </tr>
 </tbody>
 </table>
