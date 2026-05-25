@@ -143,10 +143,13 @@ comme concept difficile chez les deux tuteurs, ce qui confirme la pertinence du 
 ## Choix retenus
 
 
-### Génération d'exercices - approche algorithmique avec gabarits contextuels
+### Génération d'exercices — approche hybride algorithmique et LLM
 
-La génération par LLM des énoncés complets a été écartée en raison d'un problème fondamental de vérification : un énoncé généré
-librement ne garantit pas l'unicité et la vérifiabilité de la bonne réponse. L'approche retenue combine une génération algorithmique des paramètres numériques, la bonne réponse étant donc connue à l'avance, avec des gabarits de contextes prédéfinis dans lesquels les paramètres sont insérés. Le LLM est réservé à la génération d'explications personnalisées après erreur, là où son caractère non-déterministe n'est pas problématique. Pour des exercices contextualisés, il pourrait y avoir une banque de contextes.
+Deux types d'exercices sont générés selon des approches distinctes.
+
+Les exercices calculatoires sont générés de façon entièrement algorithmique : les paramètres numériques sont produits selon les contraintes du niveau ciblé, ce qui garantit que la bonne réponse est connue à l'avance et vérifiable de manière déterministe.
+
+Les exercices contextualisés sont générés par un LLM à partir des paramètres numériques produits algorithmiquement. Le LLM reçoit les valeurs numériques et les paramètres de l'opération, et génère un énoncé ancré dans une situation réelle. Un encadrement rigoureux du prompt assure que la bonne réponse reste vérifiable. Le LLM est également utilisé pour générer des explications personnalisées après erreur et pour alimenter le mini-chat d'assistance.
 
 ### Accès élève — code unique sans compte
 
