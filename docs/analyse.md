@@ -79,7 +79,7 @@ Malgré ces qualités, Netmath présente des limites importantes dans un context
 - Frontend : React
 - Rendu mathématique : À déterminer
 - Backend : Python
-- Base de données : À déterminer
+- Base de données : Supabase
 - LLM : À déterminer
 
 ### Contraintes humaines
@@ -101,7 +101,7 @@ Les besoins principaux ont été identifiés à partir de l'analyse des solution
 
 ### Validation auprès des tuteurs
 
-Des entretiens informels ont été conduits auprès de deux tuteurs en mathématiques au secondaire afin de valider les besoins avant le développement. Les entretiens ont été réalisés sous forme d'appels téléphoniques en mai 2026.
+Afin de recruter des participants, une publication a été publiée dans un groupe Facebook de tuteurs montréalais comptant près de 6000 membres, invitant les tuteurs et enseignants en mathématiques au secondaire à partager leur expérience dans le cadre du développement d'une plateforme web de pratique en mathématiques pour le secondaire. Deux tuteurs ont répondu favorablement et des entretiens informels ont été conduits avec chacun d'eux afin de valider les besoins avant le développement. Les entretiens ont été réalisés sous forme d'appels téléphoniques en mai 2026.
 
 #### Tuteur #1 — 11 mai 2026
 *Profil : tuteur en mathématiques et sciences au secondaire et
@@ -162,11 +162,7 @@ Le portail tuteur est inclus dans l'outil, car il est central au modèle d'affai
 
 ### Articles scientifiques
 
-Awang, L. A., Yusop, F. D., & Danaee, M. (2025). Current practices
-and future direction of artificial intelligence in mathematics
-education: A systematic review. *International Electronic Journal
-of Mathematics Education*, 20(2), em0823.
-https://doi.org/10.29333/iejme/16006
+Awang, L. A., Yusop, F. D., & Danaee, M. (2025). Current practices and future direction of artificial intelligence in mathematics education: A systematic review. *International Electronic Journal of Mathematics Education*, 20(2), em0823. https://doi.org/10.29333/iejme/16006
 
 ### Plateformes analysées
 
