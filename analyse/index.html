@@ -710,10 +710,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#generation-dexercices-approche-algorithmique-avec-gabarits-contextuels" class="md-nav__link">
+  <a href="#generation-dexercices-approche-hybride-algorithmique-et-llm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Génération d'exercices - approche algorithmique avec gabarits contextuels
+        Génération d'exercices — approche hybride algorithmique et LLM
       
     </span>
   </a>
@@ -1109,10 +1109,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#generation-dexercices-approche-algorithmique-avec-gabarits-contextuels" class="md-nav__link">
+  <a href="#generation-dexercices-approche-hybride-algorithmique-et-llm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Génération d'exercices - approche algorithmique avec gabarits contextuels
+        Génération d'exercices — approche hybride algorithmique et LLM
       
     </span>
   </a>
@@ -1384,9 +1384,10 @@ comme concept difficile chez les deux tuteurs, ce qui confirme la pertinence du 
 </blockquote>
 <hr />
 <h2 id="choix-retenus">Choix retenus<a class="headerlink" href="#choix-retenus" title="Permanent link">&para;</a></h2>
-<h3 id="generation-dexercices-approche-algorithmique-avec-gabarits-contextuels">Génération d'exercices - approche algorithmique avec gabarits contextuels<a class="headerlink" href="#generation-dexercices-approche-algorithmique-avec-gabarits-contextuels" title="Permanent link">&para;</a></h3>
-<p>La génération par LLM des énoncés complets a été écartée en raison d'un problème fondamental de vérification : un énoncé généré
-librement ne garantit pas l'unicité et la vérifiabilité de la bonne réponse. L'approche retenue combine une génération algorithmique des paramètres numériques, la bonne réponse étant donc connue à l'avance, avec des gabarits de contextes prédéfinis dans lesquels les paramètres sont insérés. Le LLM est réservé à la génération d'explications personnalisées après erreur, là où son caractère non-déterministe n'est pas problématique. Pour des exercices contextualisés, il pourrait y avoir une banque de contextes.</p>
+<h3 id="generation-dexercices-approche-hybride-algorithmique-et-llm">Génération d'exercices — approche hybride algorithmique et LLM<a class="headerlink" href="#generation-dexercices-approche-hybride-algorithmique-et-llm" title="Permanent link">&para;</a></h3>
+<p>Deux types d'exercices sont générés selon des approches distinctes.</p>
+<p>Les exercices calculatoires sont générés de façon entièrement algorithmique : les paramètres numériques sont produits selon les contraintes du niveau ciblé, ce qui garantit que la bonne réponse est connue à l'avance et vérifiable de manière déterministe.</p>
+<p>Les exercices contextualisés sont générés par un LLM à partir des paramètres numériques produits algorithmiquement. Le LLM reçoit les valeurs numériques et les paramètres de l'opération, et génère un énoncé ancré dans une situation réelle. Un encadrement rigoureux du prompt assure que la bonne réponse reste vérifiable. Le LLM est également utilisé pour générer des explications personnalisées après erreur et pour alimenter le mini-chat d'assistance.</p>
 <h3 id="acces-eleve-code-unique-sans-compte">Accès élève — code unique sans compte<a class="headerlink" href="#acces-eleve-code-unique-sans-compte" title="Permanent link">&para;</a></h3>
 <p>La création de comptes pour les élèves a été écartée en raison de la complexité légale associée aux mineurs (Loi 25 au Québec). Un code unique généré par le tuteur permet à l'élève d'accéder à son profil sans inscription, tout en maintenant la persistance des données.</p>
 <h3 id="portail-tuteur">Portail tuteur<a class="headerlink" href="#portail-tuteur" title="Permanent link">&para;</a></h3>
