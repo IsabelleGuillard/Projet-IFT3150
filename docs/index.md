@@ -5,7 +5,7 @@ title: Vue d'ensemble du projet
 # Vue d'ensemble du projet
  
 **Session:** Été 2026  
-**Auteure:** Isabelle Guillard (20278907)   
+**Auteure:** Isabelle Guillard    
 **Thème(s):** Algorithmique, LLM, systèmes adaptatifs, développement web   
 **Superviseur:** Louis Edouard Lafontant  
     
