@@ -92,7 +92,18 @@ La session d'été 2026 s'étend sur 12 semaines, de mai à août. L'objectif es
 
 ### Besoins identifiés
 
-Les besoins principaux ont été identifiés à partir de l'analyse des solutions existantes et des entretiens avec deux tuteurs en plus de mon expérience personnelle. Ils comprennent une génération algorithmique d'exercices par compétence et par niveau avec suffisamment de variété pour éviter les répétitions, un algorithme adaptatif opérant indépendamment sur chaque compétence (simplification, addition et soustraction, multiplication, division), une interface élève simple accessible via code unique sans création de compte, un portail tuteur permettant de gérer les profils, d'activer les concepts et de suivre la progression, ainsi qu'un suivi du temps de résolution pour détecter les comportements suspects.
+Les besoins principaux ont été identifiés à partir de l'analyse des solutions existantes, des entretiens avec deux tuteurs et de mon expérience personnelle en tant que tutrice en mathématiques.
+
+Du côté de la génération d'exercices, la plateforme doit être en mesure de générer algorithmiquement des exercices calculatoires par compétence
+et par niveau, avec suffisamment de variété pour éviter les répétitions, ainsi que des exercices contextualisés via un LLM encadré à partir des paramètres numériques générés algorithmiquement.
+
+Du côté de l'adaptation, un algorithme adaptatif doit opérer indépendamment sur chaque compétence (simplification, addition et soustraction, multiplication, division) afin d'ajuster dynamiquement le niveau proposé à l'élève selon ses performances récentes.
+
+Du côté de la personnalisation, le tuteur doit pouvoir configurer un profil pour chaque élève (compétences actives, langue maternelle, centres d'intérêt, particularités d'apprentissage) ainsi qu'un profil pour lui-même (approche pédagogique, explications). Ces profils sont transmis au LLM pour personnaliser les exercices contextualisés et les explications générées.
+
+Du côté du suivi, le tuteur doit disposer d'un tableau de bord lui permettant de consulter la progression de chaque élève par compétence, d'assigner des devoirs avec date limite et de détecter les comportements suspects grâce au suivi du temps de résolution.
+
+Du côté de l'accès, l'interface élève doit être accessible via un code unique sans création de compte et l'élève doit pouvoir pratiquer librement ou compléter un devoir assigné par son tuteur.
 
 ---
 
