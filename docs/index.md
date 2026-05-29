@@ -25,28 +25,24 @@ Il y a donc une discontinuité entre le travail effectué en séance et la prati
 
 ### Proposition et objectifs
 
-Ce projet propose le développement d'une plateforme web de pratique en mathématiques destinée aux élèves du secondaire, conçue pour s'intégrer naturellement dans un contexte de tutorat. La plateforme comprendrait deux portails distincts : un portail tuteur permettant de gérer les profils d'élèves et de suivre leur progression, et un portail élève offrant un accès simplifié par code unique à des exercices générés algorithmiquement et adaptés dynamiquement au niveau de l'élève.
+Ce projet propose le développement d'une plateforme web de pratique en mathématiques destinée aux élèves du secondaire, conçue pour s'intégrer naturellement dans un contexte de tutorat. La plateforme comprend deux portails distincts : un portail tuteur offrant un mécanisme de suivi et
+de personnalisation pour chaque élève, et un portail élève offrant un accès simplifié par code unique à des exercices adaptés dynamiquement
+au niveau de l'élève.
+
+Le LLM joue un rôle central dans la proposition de valeur de la plateforme. D'une part, il génère les exercices contextualisés. D'autre part, il fournit des explications personnalisées à l'élève lorsqu'il commet une erreur, en tenant compte des profils du tuteur et de l'élève pour adapter le style, le ton et le contenu de l'explication. Afin d'éviter tout débordement, les interactions avec le LLM sont encadrées par des prompts structurés qui contraignent ses sorties à des réponses pédagogiques adaptées au contexte de chaque exercice.
 
 ### Méthodologie
 
 Le projet suit une démarche de développement itératif organisée en quatre phases principales.
 
-La première phase (semaines 1 et 2) est consacrée à l'analyse des exigences : définition
-de la portée, validation des besoins auprès de tuteurs du milieu et documentation des
-études préliminaires.
+La première phase (semaines 1 et 2) est consacrée à l'analyse des exigences : définition de la portée, validation des besoins auprès de tuteurs du milieu et documentation des études préliminaires.
 
-La deuxième phase (semaines 3 et 4) couvre l'exploration technique et la prise de décisions
-architecturales : expérimentation avec le LLM retenu, définition des principales composantes
-du système et de leurs interactions, conception des maquettes de l'interface et finalisation
+La deuxième phase (semaines 3 et 4) couvre l'exploration technique et la prise de décisions architecturales : expérimentation avec le LLM retenu, définition des principales composantes du système et de leurs interactions, conception des maquettes de l'interface et finalisation
 de l'architecture.
 
-La troisième phase (semaines 5 à 8) constitue le développement principal : implémentation
-du moteur de génération algorithmique d'exercices par compétence, de l'algorithme adaptatif,
-de l'interface élève, du portail tuteur et de l'intégration LLM pour la génération
-d'exercices contextualisés et les explications personnalisées après erreur.
+La troisième phase (semaines 5 à 8) constitue le développement principal : implémentation du moteur de génération algorithmique d'exercices par compétence, de l'algorithme adaptatif, de l'interface élève, du portail tuteur et de l'intégration LLM pour la génération d'exercices contextualisés et les explications personnalisées après erreur.
 
-La quatrième phase (semaines 9 à 12) est dédiée aux tests, aux ajustements, à la rédaction
-du rapport final et à la préparation de la présentation.
+La quatrième phase (semaines 9 à 12) est dédiée aux tests, aux ajustements, à la rédaction du rapport final et à la préparation de la présentation.
 
 ### Validation et Évaluation
 
