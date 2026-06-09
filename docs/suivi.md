@@ -78,7 +78,7 @@ title: Suivi du projet
         - 8 cas côté tuteur, 4 cas côté élève
     - [x] Structures de données définies
         - 6 tables : tuteurs, eleves, competences_eleves, exercices_temporaires, historique_reponses, devoirs
-        - Décision : garder tout l'historique des réponses ????
+        - Décision : garder tout l'historique des réponses
 
 ### Décisions et ajustements
 
