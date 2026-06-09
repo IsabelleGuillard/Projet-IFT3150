@@ -760,7 +760,7 @@
 
 <h1 id="vue-densemble-du-projet">Vue d'ensemble du projet<a class="headerlink" href="#vue-densemble-du-projet" title="Permanent link">&para;</a></h1>
 <p><strong>Session:</strong> Été 2026<br />
-<strong>Auteure:</strong> Isabelle Guillard (20278907) <br />
+<strong>Auteure:</strong> Isabelle Guillard  <br />
 <strong>Thème(s):</strong> Algorithmique, LLM, systèmes adaptatifs, développement web <br />
 <strong>Superviseur:</strong> Louis Edouard Lafontant  </p>
 <h2 id="description-du-projet">Description du projet<a class="headerlink" href="#description-du-projet" title="Permanent link">&para;</a></h2>
@@ -771,22 +771,17 @@
 <p>Les élèves du secondaire qui bénéficient d'un suivi en tutorat privé manquent d'un outil de pratique autonome qui s'adapte à leur niveau réel et qui permet à leur tuteur de cibler les concepts à travailler et de suivre leur progression entre les séances. Les plateformes existantes comme Khan Academy ou Alloprof sont conçues pour une utilisation autonome et généralisée. Elles ne permettent pas à un tuteur de configurer l'environnement de pratique d'un élève spécifique, ni d'observer les difficultés de cet élève.</p>
 <p>Il y a donc une discontinuité entre le travail effectué en séance et la pratique autonome de l'élève, ce qui limite l'efficacité de l'accompagnement. De plus, les exercices proposés par ces plateformes sont prédéterminés et ne s'adaptent pas dynamiquement aux erreurs récentes de l'élève sur une compétence donnée. Par exemple, un élève qui maîtrise bien l'addition de fractions à dénominateurs égaux mais qui bloque sur la simplification continuera à recevoir des exercices génériques plutôt que des exercices ciblant précisément sa difficulté.</p>
 <h3 id="proposition-et-objectifs">Proposition et objectifs<a class="headerlink" href="#proposition-et-objectifs" title="Permanent link">&para;</a></h3>
-<p>Ce projet propose le développement d'une plateforme web de pratique en mathématiques destinée aux élèves du secondaire, conçue pour s'intégrer naturellement dans un contexte de tutorat. La plateforme comprendrait deux portails distincts : un portail tuteur permettant de gérer les profils d'élèves et de suivre leur progression, et un portail élève offrant un accès simplifié par code unique à des exercices générés algorithmiquement et adaptés dynamiquement au niveau de l'élève.</p>
+<p>Ce projet propose le développement d'une plateforme web de pratique en mathématiques destinée aux élèves du secondaire, conçue pour s'intégrer naturellement dans un contexte de tutorat. La plateforme comprend deux portails distincts : un portail tuteur offrant un mécanisme de suivi et
+de personnalisation pour chaque élève, et un portail élève offrant un accès simplifié par code unique à des exercices adaptés dynamiquement
+au niveau de l'élève.</p>
+<p>Le LLM joue un rôle central dans la proposition de valeur de la plateforme. D'une part, il génère les exercices contextualisés. D'autre part, il fournit des explications personnalisées à l'élève lorsqu'il commet une erreur, en tenant compte des profils du tuteur et de l'élève pour adapter le style, le ton et le contenu de l'explication. Afin d'éviter tout débordement, les interactions avec le LLM sont encadrées par des prompts structurés qui contraignent ses sorties à des réponses pédagogiques adaptées au contexte de chaque exercice.</p>
 <h3 id="methodologie">Méthodologie<a class="headerlink" href="#methodologie" title="Permanent link">&para;</a></h3>
 <p>Le projet suit une démarche de développement itératif organisée en quatre phases principales.</p>
-<p>La première phase (semaines 1 et 2) est consacrée à l'analyse des exigences : définition
-de la portée, validation des besoins auprès de tuteurs du milieu et documentation des
-études préliminaires.</p>
-<p>La deuxième phase (semaines 3 et 4) couvre l'exploration technique et la prise de décisions
-architecturales : expérimentation avec le LLM retenu, définition des principales composantes
-du système et de leurs interactions, conception des maquettes de l'interface et finalisation
+<p>La première phase (semaines 1 et 2) est consacrée à l'analyse des exigences : définition de la portée, validation des besoins auprès de tuteurs du milieu et documentation des études préliminaires.</p>
+<p>La deuxième phase (semaines 3 et 4) couvre l'exploration technique et la prise de décisions architecturales : expérimentation avec le LLM retenu, définition des principales composantes du système et de leurs interactions, conception des maquettes de l'interface et finalisation
 de l'architecture.</p>
-<p>La troisième phase (semaines 5 à 8) constitue le développement principal : implémentation
-du moteur de génération algorithmique d'exercices par compétence, de l'algorithme adaptatif,
-de l'interface élève, du portail tuteur et de l'intégration LLM pour la génération
-d'exercices contextualisés et les explications personnalisées après erreur.</p>
-<p>La quatrième phase (semaines 9 à 12) est dédiée aux tests, aux ajustements, à la rédaction
-du rapport final et à la préparation de la présentation.</p>
+<p>La troisième phase (semaines 5 à 8) constitue le développement principal : implémentation du moteur de génération algorithmique d'exercices par compétence, de l'algorithme adaptatif, de l'interface élève, du portail tuteur et de l'intégration LLM pour la génération d'exercices contextualisés et les explications personnalisées après erreur.</p>
+<p>La quatrième phase (semaines 9 à 12) est dédiée aux tests, aux ajustements, à la rédaction du rapport final et à la préparation de la présentation.</p>
 <h3 id="validation-et-evaluation">Validation et Évaluation<a class="headerlink" href="#validation-et-evaluation" title="Permanent link">&para;</a></h3>
 <p>La validation du projet s'effectue à deux niveaux.</p>
 <p><strong>Validation technique</strong></p>
