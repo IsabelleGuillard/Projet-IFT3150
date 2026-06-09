@@ -289,6 +289,63 @@ limite n'est pas dépassée.
   - 2a.2. Le scénario se termine.
 
 ---
+#### Niveaux de difficulté par compétence
+
+Les exercices calculatoires sont organisés en niveaux de difficulté pour chaque compétence.
+
+##### Simplification de fractions — 4 niveaux
+
+La difficulté progresse selon la complexité du PGCD à identifier.
+
+- **Niveau 1** : Le PGCD est toujours 2. Le numérateur et le dénominateur sont des nombres pairs entre 2 et 24.
+  Exemple : 6/10 devient 3/5.
+- **Niveau 2** : Le PGCD est un nombre premier parmi 3, 5 ou 7. Les valeurs vont jusqu'à 49.
+  Exemple : 15/25 devient 3/5.
+- **Niveau 3** : Le PGCD est un entier entre 2 et 12, incluant les nombres composés (4, 6, 8, 9, 10, 12). Les valeurs vont jusqu'à 144. L'élève   ne peut plus deviner le PGCD visuellement et doit le calculer.
+  Exemple : 48/72 devient 2/3.
+- **Niveau 4** : Le PGCD est un entier entre 6 et 15, avec de grands numérateurs et dénominateurs allant jusqu'à 144.
+  Exemple : 84/126 devient 2/3.
+
+Dans tous les cas, le numérateur est différent du dénominateur.
+
+
+##### Addition et soustraction de fractions — 4 niveaux
+
+La difficulté progresse selon la complexité du dénominateur commun à trouver. L'opérateur (+ ou −) est choisi aléatoirement à chaque exercice. Pour la soustraction, le résultat est toujours positif.
+
+- **Niveau 1** : Les deux fractions ont le même dénominateur, entre 2 et 50. L'élève additionne ou soustrait directement les numérateurs.
+  Exemple : 1/5 + 2/5 = 3/5.
+- **Niveau 2** : Les dénominateurs sont différents, mais l'un est un multiple direct (2, 3, 5) de l'autre. L'élève ne doit convertir qu'une       seule fraction.
+  Exemple : 1/2 + 1/4 = 3/4.
+- **Niveau 3** : Les dénominateurs sont différents avec un PPCM simple (2, 3, 4, 5, 6). Les valeurs vont jusqu'à 72. L'élève doit convertir les   deux fractions.
+  Exemple : 1/3 + 1/4 = 7/12.
+- **Niveau 4** : Les dénominateurs sont différents avec un PPCM moins évident (valeurs plus grandes comme 6, 7, 8, 9, 10, 12). Le calcul du       PPCM est non trivial.
+  Exemple : 5/6 + 3/8 = 29/24.
+
+
+##### Multiplication de fractions — 3 niveaux
+
+La difficulté progresse selon la taille des nombres et la nécessité de simplifier le résultat. La seule opération requise est la multiplication des numérateurs entre eux et des dénominateurs entre eux.
+
+- **Niveau 1** : Numérateurs et dénominateurs entre 1 et 9. Le résultat est irréductible : aucune simplification n'est nécessaire.
+  Exemple : 2/3 × 1/5 = 2/15.
+- **Niveau 2** : Numérateurs et dénominateurs entre 1 et 9. Le résultat doit être simplifié après la multiplication.
+  Exemple : 2/3 × 3/4 = 6/12 devient 1/2.
+- **Niveau 3** : Numérateurs et dénominateurs entre 1 et 15. Le résultat doit être simplifié, avec des nombres plus grands rendant la             simplification moins évidente.
+  Exemple : 4/5 × 5/8 = 20/40 devient 1/2.
+
+
+##### Division de fractions — 3 niveaux
+
+La difficulté progresse de la même façon que pour la multiplication. La méthode est d'inverser la deuxième fraction et de multiplier.
+
+- **Niveau 1** : Numérateurs et dénominateurs entre 1 et 9. Le résultat est irréductible après inversion et multiplication.
+  Exemple : 2/3 ÷ 1/5 = 2/3 × 5/1 = 10/3.
+- **Niveau 2** : Numérateurs et dénominateurs entre 1 et 9. Le résultat doit être simplifié.
+  Exemple : 2/3 ÷ 4/9 = 2/3 × 9/4 = 18/12 devient 3/2.
+- **Niveau 3** : Numérateurs et dénominateurs entre 1 et 15. Le résultat doit être simplifié, avec des nombres plus grands.
+  Exemple : 4/5 ÷ 8/15 = 4/5 × 15/8 = 60/40 devient 3/2.
+---
 
 ##### Fonctionnalités ou composantes réalisées
 
