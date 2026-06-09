@@ -53,4 +53,44 @@ title: Suivi du projet
 
 !!! warning "Difficultés"
     - Décision sur l'approche de génération d'exercices contextualisés
-        - La génération libre par LLM semblait attrayante mais introduit un problème de vérification des réponses.
+        - La génération libre par LLM semble attrayante mais introduit un problème de vérification des réponses.
+
+
+## Semaines 3 à 5 (19 mai — 8 juin 2026)
+
+### Objectifs de la période
+- Explorer le LLM fourni par le superviseur
+- Définir l'architecture du backend
+- Concevoir les maquettes de l'interface
+- Définir les cas d'utilisation
+- Définir les structures de données
+
+### Travail réalisé
+
+!!! abstract "Avancement"
+    - [x] Architecture backend définie
+        - Structure en 6 couches : routes, controllers, domaine, models, database, llm
+        - Schéma de base de données défini (6 tables)
+    - [x] Maquettes de l'interface complétées sur Figma
+        - 2 portails : élève et tuteur
+        - Profils tuteur et élève pour personnalisation LLM
+    - [x] Cas d'utilisation rédigés (CU01 à CU12)
+        - 8 cas côté tuteur, 4 cas côté élève
+    - [x] Structures de données définies
+        - 6 tables : tuteurs, eleves, competences_eleves, exercices_temporaires, historique_reponses, devoirs
+        - Décision : garder tout l'historique des réponses ????
+
+### Décisions et ajustements
+
+!!! info "Décisions"
+    - Exercices en deux phases : calculatoires d'abord, contextualisés ensuite
+        - La phase 1 (semaine 5+) couvre uniquement la génération algorithmique d'exercices calculatoires
+    - Contraintes de génération définies pour les 4 compétences
+        - Simplification : 4 niveaux
+        - Addition/soustraction : 4 niveaux
+        - Multiplication : 3 niveaux
+        - Division : 3 niveaux
+    - Profil tuteur pour le LLM : approche, niveau de détail, ton, notes libres
+    - Profil élève pour le LLM : langue maternelle, centres d'intérêt, particularités, notes libres
+    - Devoir assigné : séquence fixée par le tuteur, un seul devoir actif à la fois, date limite
+    - Prévisualisation d'exercices accessible depuis le portail tuteur pour valider les profils
