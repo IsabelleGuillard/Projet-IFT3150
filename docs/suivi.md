@@ -70,14 +70,14 @@ title: Suivi du projet
 !!! abstract "Avancement"
     - [x] Architecture backend définie
         - Structure en 6 couches : routes, controllers, domaine, models, database, llm
-        - Schéma de base de données défini (6 tables)
+        - Schéma de base de données défini (5 tables)
     - [x] Maquettes de l'interface complétées sur Figma
         - 2 portails : élève et tuteur
         - Profils tuteur et élève pour personnalisation LLM
     - [x] Cas d'utilisation rédigés (CU01 à CU12)
         - 8 cas côté tuteur, 4 cas côté élève
     - [x] Structures de données définies
-        - 6 tables : tuteurs, eleves, competences_eleves, exercices_temporaires, historique_reponses, devoirs
+        - 5 tables : tuteurs, eleves, competences_eleves, historique_exercices, devoirs
         - Décision : garder tout l'historique des réponses
 
 ### Décisions et ajustements
