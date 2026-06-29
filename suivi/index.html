@@ -570,6 +570,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#semaines-6-a-8-9-30-juin-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semaines 6 à 8 (9 — 30 juin 2026)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Semaines 6 à 8 (9 — 30 juin 2026)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objectifs-de-la-periode_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objectifs de la période
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#travail-realise_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Travail réalisé
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decisions-et-ajustements_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Décisions et ajustements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#difficultes-rencontrees_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Difficultés rencontrées
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -796,6 +857,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#semaines-6-a-8-9-30-juin-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semaines 6 à 8 (9 — 30 juin 2026)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Semaines 6 à 8 (9 — 30 juin 2026)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objectifs-de-la-periode_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objectifs de la période
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#travail-realise_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Travail réalisé
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decisions-et-ajustements_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Décisions et ajustements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#difficultes-rencontrees_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Difficultés rencontrées
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -946,6 +1068,80 @@
 <li>Profil élève pour le LLM : langue maternelle, centres d'intérêt, particularités, notes libres</li>
 <li>Devoir assigné : séquence fixée par le tuteur, un seul devoir actif à la fois, date limite</li>
 <li>Prévisualisation d'exercices accessible depuis le portail tuteur pour valider les profils</li>
+</ul>
+</div>
+<h2 id="semaines-6-a-8-9-30-juin-2026">Semaines 6 à 8 (9 — 30 juin 2026)<a class="headerlink" href="#semaines-6-a-8-9-30-juin-2026" title="Permanent link">&para;</a></h2>
+<h3 id="objectifs-de-la-periode_2">Objectifs de la période<a class="headerlink" href="#objectifs-de-la-periode_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Implémenter le backend complet (routes, controllers, services, base de données)</li>
+<li>Intégrer Supabase comme base de données</li>
+<li>Intégrer des explications personnalisées</li>
+<li>Tester les routes de l'API</li>
+</ul>
+<h3 id="travail-realise_2">Travail réalisé<a class="headerlink" href="#travail-realise_2" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p class="admonition-title">Avancement</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Backend fonctionnel (module fractions)<ul>
+<li>Génération algorithmique d'exercices pour les 4 compétences et tous les niveaux</li>
+<li>Vérification des réponses avec détection d'erreurs spécifiques par compétence</li>
+<li>Routes : <code>/api/exercices/generer</code>, <code>/api/exercices/pratique-libre</code>, <code>/api/exercices/verifier</code>, <code>/api/exercices/sauvegarder</code>, <code>/api/exercices/soumettre</code></li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Logique de devoirs<ul>
+<li>Création, progression par étapes, soumission et gestion des statuts (<code>en_attente</code>, <code>en_cours</code>, <code>complete</code>, <code>expire</code>)</li>
+<li>Règle du devoir unique actif par élève appliquée</li>
+<li>Routes : <code>/api/devoirs/creer</code>, <code>/api/devoirs/exercice</code>, <code>/api/devoirs/soumettre</code></li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sauvegarde et reprise d'exercice<ul>
+<li>Un exercice par compétence peut être sauvegardé et repris à la prochaine connexion</li>
+<li>Détection automatique de reprise via <code>historique_exercices</code> (<code>reponse_eleve = ""</code>)</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Intégration Supabase<ul>
+<li>2 tables : <code>devoirs</code> et <code>historique_exercices</code> intégrée dans <code>historique_exercices</code></li>
+<li>Couche <code>db/requetes/</code> avec fonctions dédiées par table</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Vérificateur intelligent par compétence<ul>
+<li>Détection d'erreurs fréquentes spécifiques pour les 4 compétences</li>
+<li>Simplification : fraction équivalente non réduite, simplifié un seul côté, réponse inversée</li>
+<li>Addition/soustraction : numérateurs et dénominateurs opérés directement, numérateurs seuls opérés, dénominateurs seuls opérés, réponse inversée</li>
+<li>Multiplication : calcul bon mais non simplifié, dénominateur commun cherché, addition au lieu de multiplication, réponse inversée</li>
+<li>Division : calcul bon mais non simplifié, deuxième fraction non inversée, soustraction au lieu de division, réponse inversée</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id="decisions-et-ajustements_2">Décisions et ajustements<a class="headerlink" href="#decisions-et-ajustements_2" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Décisions</p>
+<ul>
+<li>Sauvegarde intégrée dans <code>historique_exercices</code> plutôt qu'une table séparée<ul>
+<li>Un exercice sauvegardé est une ligne avec <code>reponse_eleve = ""</code>, mis à jour à la soumission. Évite la duplication de tables pour un seul champ</li>
+</ul>
+</li>
+<li>Architecture sans couplage entre modules<ul>
+<li>Le registre <code>MODULES</code> dans <code>services/__init__.py</code> centralise l'accès aux générateurs et vérificateurs. Ajouter un nouveau module (ex: algèbre) ne nécessite qu'une entrée dans ce registre</li>
+</ul>
+</li>
+<li>Contexte générique pour les prompts LLM</li>
+<li><code>id_eleve</code> et <code>id_tuteur</code> stockés comme <code>text</code> en BD pour l'instant<ul>
+<li>Les tables <code>tuteurs</code> et <code>eleves</code> ne sont pas encore implémentées. La migration vers des <code>uuid</code> est prévue lors de l'implémentation de l'authentification</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id="difficultes-rencontrees_1">Difficultés rencontrées<a class="headerlink" href="#difficultes-rencontrees_1" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Difficultés</p>
+<ul>
+<li>Hallucinations LLM sur les cas d'erreur vagues<ul>
+<li>Quand la réponse de l'élève n'a aucun lien logique avec la question, le LLM invente une explication plausible mais incorrecte. Résolu en écrivant des explications fixes pour tous les cas identifiés.</li>
+</ul>
+</li>
+<li>Gestion des permissions Supabase</li>
 </ul>
 </div>
 
