@@ -94,3 +94,54 @@ title: Suivi du projet
     - Profil élève pour le LLM : langue maternelle, centres d'intérêt, particularités, notes libres
     - Devoir assigné : séquence fixée par le tuteur, un seul devoir actif à la fois, date limite
     - Prévisualisation d'exercices accessible depuis le portail tuteur pour valider les profils
+
+
+## Semaines 6 à 8 (9 — 30 juin 2026)
+
+### Objectifs de la période
+- Implémenter le backend complet (routes, controllers, services, base de données)
+- Intégrer Supabase comme base de données
+- Intégrer des explications personnalisées
+- Tester les routes de l'API
+
+### Travail réalisé
+
+!!! abstract "Avancement"
+    - [x] Backend fonctionnel (module fractions)
+        - Génération algorithmique d'exercices pour les 4 compétences et tous les niveaux
+        - Vérification des réponses avec détection d'erreurs spécifiques par compétence
+        - Routes : `/api/exercices/generer`, `/api/exercices/pratique-libre`, `/api/exercices/verifier`, `/api/exercices/sauvegarder`, `/api/exercices/soumettre`
+    - [x] Logique de devoirs
+        - Création, progression par étapes, soumission et gestion des statuts (`en_attente`, `en_cours`, `complete`, `expire`)
+        - Règle du devoir unique actif par élève appliquée
+        - Routes : `/api/devoirs/creer`, `/api/devoirs/exercice`, `/api/devoirs/soumettre`
+    - [x] Sauvegarde et reprise d'exercice
+        - Un exercice par compétence peut être sauvegardé et repris à la prochaine connexion
+        - Détection automatique de reprise via `historique_exercices` (`reponse_eleve = ""`)
+    - [x] Intégration Supabase
+        - 2 tables : `devoirs` et `historique_exercices` intégrée dans `historique_exercices`
+        - Couche `db/requetes/` avec fonctions dédiées par table
+    - [x] Vérificateur intelligent par compétence
+        - Détection d'erreurs fréquentes spécifiques pour les 4 compétences
+        - Simplification : fraction équivalente non réduite, simplifié un seul côté, réponse inversée
+        - Addition/soustraction : numérateurs et dénominateurs opérés directement, numérateurs seuls opérés, dénominateurs seuls opérés, réponse inversée
+        - Multiplication : calcul bon mais non simplifié, dénominateur commun cherché, addition au lieu de multiplication, réponse inversée
+        - Division : calcul bon mais non simplifié, deuxième fraction non inversée, soustraction au lieu de division, réponse inversée
+
+### Décisions et ajustements
+
+!!! info "Décisions"
+    - Sauvegarde intégrée dans `historique_exercices` plutôt qu'une table séparée
+        - Un exercice sauvegardé est une ligne avec `reponse_eleve = ""`, mis à jour à la soumission. Évite la duplication de tables pour un seul champ
+    - Architecture sans couplage entre modules
+        - Le registre `MODULES` dans `services/__init__.py` centralise l'accès aux générateurs et vérificateurs. Ajouter un nouveau module (ex: algèbre) ne nécessite qu'une entrée dans ce registre
+    - Contexte générique pour les prompts LLM
+    - `id_eleve` et `id_tuteur` stockés comme `text` en BD pour l'instant
+        - Les tables `tuteurs` et `eleves` ne sont pas encore implémentées. La migration vers des `uuid` est prévue lors de l'implémentation de l'authentification
+
+### Difficultés rencontrées
+
+!!! warning "Difficultés"
+    - Hallucinations LLM sur les cas d'erreur vagues
+        - Quand la réponse de l'élève n'a aucun lien logique avec la question, le LLM invente une explication plausible mais incorrecte. Résolu en écrivant des explications fixes pour tous les cas identifiés.
+    - Gestion des permissions Supabase
